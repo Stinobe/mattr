@@ -1,0 +1,9 @@
+# Packages
+node_modules
+
+# Package
+dist
+stinobe-mattr-*.tgz
+
+# Generated
+coverage

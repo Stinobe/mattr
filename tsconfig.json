@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "strict": true,
+        "declaration": true,
+        "declarationMap": true,
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true,
+        "verbatimModuleSyntax": true,
+        "isolatedModules": true,
+        "skipLibCheck": true,
+        "paths": {
+            "@lib/*": [
+                "./src/*"
+            ],
+            "@mocks/*": [
+                "./mocks/*"
+            ]
+        }
+    },
+    "include": [
+        "src",
+        "tests"
+    ]
+}

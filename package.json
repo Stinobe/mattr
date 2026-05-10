@@ -1,0 +1,81 @@
+{
+    "name": "@stinobe/mattr",
+    "version": "0.0.0",
+    "description": "A tiny, type-safe Markdown frontmatter parser for modern TypeScript projects",
+    "sideEffects": false,
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.cjs",
+    "modules": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "scripts": {
+        "dev": "vitest",
+        "build": "tsup",
+        "test": "vitest --run",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint",
+        "lint:fix": "eslint --fix",
+        "coverage": "vitest --run --coverage",
+        "release": "changeset publish"
+    },
+    "keywords": [
+        "frontmatter",
+        "matter",
+        "yaml",
+        "front-matter",
+        "front matter",
+        "markdown",
+        "mdx",
+        "md",
+        "parser"
+    ],
+    "publishConfig": {
+        "provenance": true,
+        "access": "public"
+    },
+    "author": "Stinobe",
+    "repository": {
+        "type": "git",
+        "url": "github:Stinobe/mattr"
+    },
+    "license": {
+        "type": "MIT",
+        "url": "https://mit-license.org/"
+    },
+    "packageManager": "pnpm",
+    "type": "module",
+    "dependencies": {
+        "yaml": "^2.8.4"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.31.0",
+        "@eslint/js": "^10.0.1",
+        "@eslint/markdown": "^8.0.1",
+        "@types/node": "^25.6.2",
+        "@vitest/coverage-v8": "^4.1.6",
+        "eslint": "^10.3.0",
+        "globals": "^17.6.0",
+        "jiti": "^2.7.0",
+        "tsup": "^8.5.1",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.59.3",
+        "vitest": "^4.1.6",
+        "zod": "^4.4.3"
+    },
+    "peerDependencies": {
+        "zod": "^4.4.3"
+    },
+    "peerDependenciesMeta": {
+        "zod": {
+            "optional": true
+        }
+    }
+}
