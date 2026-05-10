@@ -1,0 +1,72 @@
+{
+    "name": "@stinobe/mattr",
+    "version": "0.0.0",
+    "description": "",
+    "sideEffects": false,
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.cjs",
+    "modules": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "scripts": {
+        "dev": "vitest",
+        "build": "tsup",
+        "test": "vitest --run",
+        "typecheck": "tsc --noEmit"
+    },
+    "keywords": [
+        "frontmatter",
+        "matter",
+        "yaml",
+        "front-matter",
+        "front matter",
+        "markdown",
+        "mdx",
+        "md",
+        "parser"
+    ],
+    "author": "Stinobe",
+    "repository": {
+        "type": "git",
+        "url": "github:Stinobe/mattr"
+    },
+    "license": {
+        "type": "MIT",
+        "url": "https://mit-license.org/"
+    },
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "^11.0.9",
+            "onFail": "download"
+        }
+    },
+    "type": "module",
+    "dependencies": {
+        "yaml": "^2.8.4"
+    },
+    "devDependencies": {
+        "@types/node": "^25.6.2",
+        "@vitest/coverage-v8": "^4.1.6",
+        "tsup": "^8.5.1",
+        "typescript": "^6.0.3",
+        "vitest": "^4.1.6",
+        "zod": "^4.4.3"
+    },
+    "peerDependencies": {
+        "zod": "^4.4.3"
+    },
+    "peerDependenciesMeta": {
+        "zod": {
+            "optional": true
+        }
+    }
+}
