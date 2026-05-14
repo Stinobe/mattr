@@ -1,5 +1,11 @@
 # @stinobe/mattr
 
+## 0.1.4
+
+### Patch Changes
+
+- b50ffe3: Bugfixes
+
 ## 0.1.3
 
 ### Patch Changes
