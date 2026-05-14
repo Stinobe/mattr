@@ -46,10 +46,7 @@
         "type": "git",
         "url": "github:Stinobe/mattr"
     },
-    "license": {
-        "type": "MIT",
-        "url": "https://mit-license.org/"
-    },
+    "license": "MIT",
     "packageManager": "pnpm",
     "type": "module",
     "dependencies": {
