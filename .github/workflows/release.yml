@@ -52,7 +52,7 @@ jobs:
         with:
           publish: pnpm release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPMJS_PUBLISHING_TOKEN }}
 
       - name: Publish to GitHub
         if: steps.changesets.outputs.hasChangesets == 'false'
