@@ -58,8 +58,7 @@ jobs:
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
           cat << EOF > "$HOME/.npmrc"
-          @YOUR_SCOPE:registry=https://npm.pkg.github.com
-          //npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
+            //npm.pkg.github.com/:_authToken=$NPM_TOKEN
           EOF
 
       - name: Release to GitHub
