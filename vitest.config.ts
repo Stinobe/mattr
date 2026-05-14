@@ -8,5 +8,11 @@ export default defineConfig({
     name: "@stinobe/mattr",
     exclude: [...configDefaults.exclude, "./dist", "./mocks"],
     include: ["tests/**/*"],
+    coverage: {
+      include: ["src/**/*"],
+      thresholds: {
+        "100": true,
+      },
+    },
   },
 });
