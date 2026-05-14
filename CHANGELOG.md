@@ -1,5 +1,11 @@
 # @stinobe/mattr
 
+## 0.1.6
+
+### Patch Changes
+
+- 8d0da86: Bugfixes
+
 ## 0.1.5
 
 ### Patch Changes

@@ -1,5 +1,0 @@
----
-"@stinobe/mattr": patch
----
-
-Bugfixes
