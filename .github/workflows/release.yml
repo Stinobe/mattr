@@ -60,6 +60,8 @@ jobs:
           cat << EOF > "$HOME/.npmrc"
             //npm.pkg.github.com/:_authToken=$NPM_TOKEN
           EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPMJS_PUBLISHING_TOKEN }}
 
       - name: Release to GitHub
         if: steps.changesets.outputs.hasChangesets == 'false'
