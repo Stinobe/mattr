@@ -35,6 +35,9 @@
         "markdown",
         "mdx",
         "md",
+        "parser",
+        "typescript",
+        "zod",
         "parser"
     ],
     "publishConfig": {
