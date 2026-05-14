@@ -16,6 +16,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
 
+    environment: publish
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -51,14 +53,9 @@ jobs:
         id: changesets
         with:
           publish: pnpm release
-        env:
-          NPM_TOKEN: ${{ secrets.NPMJS_PUBLISHING_TOKEN }}
 
       - name: Release to GitHub
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
-          pnpm config set registry "https://npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN"
+          pnpm config set registry "https://npm.pkg.github.com/"
           pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
