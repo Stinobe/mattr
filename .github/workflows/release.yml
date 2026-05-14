@@ -54,18 +54,11 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPMJS_PUBLISHING_TOKEN }}
 
-      - name: Setup for GitHub release
-        if: steps.changesets.outputs.hasChangesets == 'false'
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-            //npm.pkg.github.com/:_authToken=$NPM_TOKEN
-          EOF
-        env:
-          NPM_TOKEN: ${{ secrets.NPMJS_PUBLISHING_TOKEN }}
-
       - name: Release to GitHub
         if: steps.changesets.outputs.hasChangesets == 'false'
-        run: pnpm publish --no-git-checks
+        run: |
+          pnpm config set registry "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN"
+          pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
