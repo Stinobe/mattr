@@ -63,7 +63,7 @@ jobs:
           EOF
 
       - name: Release to GitHub
-        run: pnpm release --no-git-checks
+        run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
