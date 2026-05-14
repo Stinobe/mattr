@@ -61,6 +61,8 @@ jobs:
           @YOUR_SCOPE:registry=https://npm.pkg.github.com
           //npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
           EOF
+        with:
+          publish: pnpm release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
