@@ -56,6 +56,9 @@ try {
 ``` 
 Visit the website for more information about [Zod](https://zod.dev/)
 
+> [!NOTE]
+> Zod is not required to use this library
+
 ## Options
 
 ### `excerpt` _(optional)_
