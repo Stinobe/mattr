@@ -58,7 +58,7 @@ jobs:
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
           pnpm config set //npm.pkg.github.com/:_authToken "${NODE_AUTH_TOKEN}"
-          pnpm config set registry "https://npm.pkg.github.com"
+          pnpm config set @Stinobe:registry "https://npm.pkg.github.com"
           pnpm publish --registry "https://npm.pkg.github.com" --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
