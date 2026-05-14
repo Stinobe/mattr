@@ -57,7 +57,7 @@ jobs:
       - name: Release to GitHub
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
-          pnpm config set registry "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN"
+          pnpm config set registry "https://npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN"
           pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
