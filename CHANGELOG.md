@@ -1,5 +1,11 @@
 # @stinobe/mattr
 
+## 0.1.2
+
+### Patch Changes
+
+- b63bf85: Update workflows
+
 ## 0.1.1
 
 ### Patch Changes
