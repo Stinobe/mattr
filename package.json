@@ -35,6 +35,9 @@
         "markdown",
         "mdx",
         "md",
+        "parser",
+        "typescript",
+        "zod",
         "parser"
     ],
     "publishConfig": {
@@ -49,6 +52,9 @@
     "license": "MIT",
     "packageManager": "pnpm",
     "type": "module",
+    "engines": {
+        "node": ">=18"
+    },
     "dependencies": {
         "yaml": "^2.8.4"
     },
