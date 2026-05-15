@@ -1,5 +1,11 @@
 # @stinobe/mattr
 
+## 0.1.7
+
+### Patch Changes
+
+- 98dca37: Optimize package size
+
 ## 0.1.6
 
 ### Patch Changes
