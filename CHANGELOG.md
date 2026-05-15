@@ -1,5 +1,11 @@
 # @stinobe/mattr
 
+## 0.2.0
+
+### Minor Changes
+
+- e1311d3: Moved from `yaml` to `js-yaml` to reduce package size
+
 ## 0.1.7
 
 ### Patch Changes

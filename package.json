@@ -1,6 +1,6 @@
 {
     "name": "@stinobe/mattr",
-    "version": "0.1.7",
+    "version": "0.2.0",
     "description": "A tiny, type-safe Markdown frontmatter parser for modern TypeScript projects",
     "sideEffects": false,
     "files": [
