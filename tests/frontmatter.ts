@@ -32,7 +32,7 @@ describe("default usage", () => {
   });
 
   it("returns empty object when `parseYaml` returns null", async () => {
-    vi.doMock("yaml", () => ({ parse: vi.fn(() => null) }));
+    vi.doMock("js-yaml", () => ({ load: vi.fn(() => null) }));
     const { parseFrontmatter } = await import("@lib/frontmatter");
     const parsed = parseFrontmatter(markdown);
     expect(parsed).toEqual({
@@ -55,8 +55,8 @@ describe("error handeling", () => {
   });
 
   it("should throw an error when Yaml is invalid", async () => {
-    vi.doMock("yaml", () => ({
-      parse: vi.fn(() => {
+    vi.doMock("js-yaml", () => ({
+      load: vi.fn(() => {
         throw new Error("Failde from Yaml");
       }),
     }));

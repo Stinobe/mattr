@@ -1,4 +1,4 @@
-import { parse as parseYaml } from "yaml";
+import { load as parseYaml } from "js-yaml";
 import { MattrParseError } from "@lib/errors";
 import { EMPTY_OBJECT, FRONTMATTER_DELIMITTER } from "@lib/constants";
 import type { MattrAllowedTypes, MattrData } from "./types";
