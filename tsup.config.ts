@@ -8,11 +8,11 @@ export default defineConfig({
       ignoreDeprecations: "6.0", // TODO: Remove when `tsup` released fix
     },
   },
-  sourcemap: true,
+  sourcemap: false,
   clean: true,
   splitting: false,
   treeshake: true,
   minify: true,
   target: "es2022",
-  external: ["yaml", "zod"],
+  external: ["js-yaml", "zod"],
 });
