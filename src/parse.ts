@@ -3,7 +3,7 @@ import { parseFrontmatter } from "@lib/frontmatter";
 import { validateSchema } from "@lib/helpers";
 import { extractExcerpt } from "@lib/excerpt";
 
-export function parse<T extends MattrAllowedTypes>(
+export function parse<T extends MattrAllowedTypes = Record<string, unknown>>(
   input: string,
   options?: ParseOptions<T>,
 ): ParsedFile<T> {
