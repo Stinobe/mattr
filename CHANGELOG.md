@@ -1,5 +1,11 @@
 # @stinobe/mattr
 
+## 0.2.2
+
+### Patch Changes
+
+- be11f46: Fix issue with typing when creating wrapper function
+
 ## 0.2.1
 
 ### Patch Changes
