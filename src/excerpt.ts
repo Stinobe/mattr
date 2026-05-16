@@ -1,4 +1,3 @@
-import type { ZodType } from "zod";
 import { MattrExcerptError } from "@lib/errors";
 import type { MattrAllowedTypes, ParseOptions } from "./types";
 
@@ -14,16 +13,6 @@ function extractFirstParagraph(content: string) {
 
   return fp;
 }
-
-export function extractExcerpt<T extends Record<string, unknown>>(
-  content: string,
-  options: ParseOptions<T>,
-): string | null;
-
-export function extractExcerpt<TSchema extends ZodType>(
-  content: string,
-  options: ParseOptions<TSchema>,
-): string | null;
 
 export function extractExcerpt<T extends MattrAllowedTypes>(
   content: string,

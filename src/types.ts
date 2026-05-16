@@ -16,7 +16,7 @@ export interface ExcerptFunctionOptions {
 export type ExcerptFunction = (
   context: ExcerptContext,
   options: ExcerptFunctionOptions,
-) => string;
+) => string | null;
 
 export interface ParseOptionsBase {
   readonly excerptSeparator?: string;
